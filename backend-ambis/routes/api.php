@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('/signin', [App\Http\Controllers\AuthController::class, 'signin']);
 Route::post('/register', [App\Http\Controllers\AuthController::class, 'register']);
+Route::get('/unauth/event', [App\Http\Controllers\eventController::class, 'index']);
