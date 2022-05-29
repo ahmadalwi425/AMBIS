@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('/signin', [App\Http\Controllers\AuthController::class, 'signin']);
+Route::post('/register', [App\Http\Controllers\AuthController::class, 'register']);
+Route::get('/unauth/event', [App\Http\Controllers\eventController::class, 'index']);
