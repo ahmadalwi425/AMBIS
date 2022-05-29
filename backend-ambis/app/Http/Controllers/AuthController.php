@@ -30,6 +30,18 @@ class AuthController extends Controller
         ]);
     }
 
+    public function profile()
+    {
+        return response()->json(auth()->user());
+    }
+
+    public function logout()
+    {
+        auth()->logout();
+
+        return response()->json(['message' => 'User successfully logged out.']);
+    }
+
     public function signin(Request $request){
         $validator = Validator::make($request->all(), [
             'email' => 'required|email',
@@ -45,6 +57,7 @@ class AuthController extends Controller
         }
         return $this->respondWithToken($token);
     }
+    
 
     public function user(){
         return 'Authenticated User';

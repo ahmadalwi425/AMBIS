@@ -41,7 +41,18 @@ class eventController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $event = Event::create([
+            'event_title' => $request['event_title'],
+            'event_description'=>$request['event_description'],
+            'event_link'=>$request['event_link'],
+            'id_category'=>$request['id_category'],
+            'id_creator'=>$request['id_creator'],
+        ]);
+        $data = ['event'=>$event];
+        return response()->json([
+            'data' => $data,
+            'code' => app('Illuminate\Http\Response')->status()
+        ], app('Illuminate\Http\Response')->status());
     }
 
     /**
