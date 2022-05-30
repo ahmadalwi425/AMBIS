@@ -1,0 +1,14 @@
+.ambis-primary {
+    background-color: #2D1B6B;
+}
+
+.ambis-btn-primary {
+    background-color: #2D1B6B;
+    border-radius: 30px;    
+    color: white;
+}
+
+.ambis-outline-primary {
+    border: 1px solid #2D1B6B;
+    border-radius: 20px;    
+}
