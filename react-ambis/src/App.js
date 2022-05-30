@@ -12,6 +12,7 @@ import Recruitment from './containers/Recruitment'
 import Profile from './containers/Profile'
 import Login from './containers/Login'
 import EventDetail from './containers/EventDetail';
+import CreateEvent from './containers/CreateEvent'
 
 class App extends Component {
   render() {
@@ -25,6 +26,7 @@ class App extends Component {
           <Route path="/recruitment" element={< Recruitment />} />
           <Route path="/profile" element={< Profile />} />
           <Route path="/login" element={< Login />} />
+          <Route path="/createevent" element={< CreateEvent />}></Route>
         </Routes>
         <Footer/>
       </Router>
