@@ -1,41 +1,53 @@
 // import logo from './logo.svg';
 import './App.css';
-import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { Component } from "react";
 import { Button, Row, Col } from 'react-bootstrap';
-import {BrowserRouter as Router,Link,Route,Routes} from "react-router-dom";
+import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.min.js'
+import Header from './components/Header';
+import Footer from './components/Footer';
 
-function App() {
-  return (
-    <Router>
-      <div className="App">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/dashboard">Dashboard</Link>
-          </li>
-        </ul>
-        <hr />
-        <Routes>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/dashboard">
-            <Dashboard />
-          </Route>
-        </Routes>
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Header />
+        <h1>Component from Class App</h1>        
+        <Footer title='Footer Page' name='JTI' />
       </div>
-    </Router>
-  );
+      // <Router>
+      //   <div className="App">
+      //     <ul>
+      //       <li>
+      //         <Link to="/">Home</Link>
+      //       </li>
+      //       <li>
+      //         <Link to="/about">About</Link>
+      //       </li>
+      //       <li>
+      //         <Link to="/dashboard">Dashboard</Link>
+      //       </li>
+      //     </ul>
+      //     <hr />
+      //     <Routes>
+      //       <Route exact path="/">
+      //         <Home />
+      //       </Route>
+      //       <Route path="/about">
+      //         <About />
+      //       </Route>
+      //       <Route path="/dashboard">
+      //         <Dashboard />
+      //       </Route>
+      //     </Routes>
+      //   </div>
+      // </Router>
+    );
+  }
 }
+
+
 function Home() {
   return (
     <div>
@@ -47,6 +59,7 @@ function Home() {
     </div>
   );
 }
+
 function About() {
   return (
     <div>
@@ -54,6 +67,7 @@ function About() {
     </div>
   );
 }
+
 function Dashboard() {
   return (
     <div>
