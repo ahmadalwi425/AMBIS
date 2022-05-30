@@ -11,6 +11,7 @@ import Event from './containers/Event'
 import Post from './containers/Post'
 import Profile from './containers/Profile'
 import Login from './containers/Login'
+import CreateEvent from './containers/CreateEvent'
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
               <Route exact path="/event" element={< Event />}></Route>
               <Route path="/post" element={< Post />}></Route>
               <Route path="/profile" element={< Profile />}></Route>
+              <Route path="/createevent" element={< CreateEvent />}></Route>
               <Route path="/login" element={< Login />}></Route>
             </Routes>
           </div>
