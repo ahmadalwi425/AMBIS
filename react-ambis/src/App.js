@@ -10,23 +10,25 @@ import Home from './containers/Home'
 import Event from './containers/Event'
 import Post from './containers/Post'
 import Profile from './containers/Profile'
+import Login from './containers/Login'
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Header />
-        <div className='container'>
-          <Router>
+        <Router>
+          <Header />
+          <div className='container'>
             <Routes>
               <Route exact path="/" element={< Home />}></Route>
-              <Route path="/event" element={< Event />}></Route>
+              <Route exact path="/event" element={< Event />}></Route>
               <Route path="/post" element={< Post />}></Route>
               <Route path="/profile" element={< Profile />}></Route>
+              <Route path="/login" element={< Login />}></Route>
             </Routes>
-          </Router>
-        </div>
-        <Footer title='Footer Page' name='JTI' />
+          </div>
+          <Footer title='Footer Page' name='JTI' />
+        </Router>
       </div>
     );
   }

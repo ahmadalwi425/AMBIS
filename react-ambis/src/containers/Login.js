@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 
 // Class Component Header 
-function Post() {
+function Login() {
     return (
         <div>
-            <h1>Post</h1>
+            <h1>Login</h1>
         </div>
     );
 }
 
-export default Post;
+export default Login;
