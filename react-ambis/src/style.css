@@ -16,3 +16,11 @@
 .ambis-secondary {
     background-color: #584398;
 }
+
+.ambis-link-primary {
+    color: #2E286B;
+}
+
+.ambis-link-active {
+    color: #8D74D2;
+}

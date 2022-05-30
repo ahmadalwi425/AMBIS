@@ -6,7 +6,9 @@ import logo from '../logo.png';
 function Login() {
     return (
         <div style={{ backgroundColor: "#EAEAEA" }} className="p-3">
-            <img src={logo} alt="Logo" style={{ width: "200px" }} className="mx-auto"/>
+            <div className="text-center">
+                <img src={logo} alt="Logo" style={{ width: "200px" }}/>
+            </div>
             <div className="card my-3 p-3 mx-auto" style={{ width: "500px" }}>
                 <div className="card-body">
                     <h5 className="card-title text-center">Log In to AMBIS</h5>
@@ -17,7 +19,9 @@ function Login() {
                         <div className="mb-3">                            
                             <input type="password" className="form-control" id="password" placeholder="password"/>
                         </div>                        
-                        <button type="submit" className="btn btn-primary" style={{width:"400px"}}>Submit</button>
+                        <div className="text-center">
+                            <button type="submit" className="btn ambis-btn-primary" style={{width:"350px"}}>Submit</button>
+                        </div>
                     </form>
                 </div>
             </div>
