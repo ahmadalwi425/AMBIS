@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import logo from '../logo.png';
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
+import '../style.css'
 
 class Header extends Component {
     render() {
@@ -16,7 +17,7 @@ class Header extends Component {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <form className="d-flex" role="search">
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" style={{ width: "500px", borderRadius: "10px" }}></input>
-                            <button className="btn btn-outline-primary" type="submit">Search</button>
+                            <button className="btn btn-sm ambis-btn-primary" type="submit">Search</button>
                         </form>
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
                             <li className="nav-item mx-2">
@@ -26,13 +27,13 @@ class Header extends Component {
                                 <Link className="nav-link" to="/event">Event</Link>
                             </li>
                             <li className="nav-item mx-2">
-                                <Link className="nav-link" to="/post">Post</Link>
+                                <Link className="nav-link" to="/recruitment">Recruitment</Link>
                             </li>
                             <li className="nav-item mx-2">
                                 <Link className="nav-link" to="/profile">Profile</Link>
                             </li>
                             <li className="nav-item mx-2">
-                                <button className="btn btn-sm" style={{ background: "#2D1B6B", borderRadius: "30px", width: "110px" }}>
+                                <button className="btn btn-sm ambis-btn-primary" style={{ width: "110px" }}>
                                     <Link className="nav-link text-light" to="/login">Log Out</Link>
                                 </button>
                             </li>
