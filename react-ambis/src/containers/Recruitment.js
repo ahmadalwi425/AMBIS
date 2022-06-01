@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 function Post() {
     return (
         <div>
-            <h1>Post</h1>
+            <h1>Recruitment</h1>
         </div>
     );
 }
