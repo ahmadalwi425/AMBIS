@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\CategoryEvent;
 use App\Models\Event;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -30,7 +31,12 @@ class eventController extends Controller
      */
     public function create()
     {
-        //
+        $category = CategoryEvent::get();
+        $data = ['category'=>$category];
+        return response()->json([
+            'data' => $data,
+            'code' => app('Illuminate\Http\Response')->status()
+        ], app('Illuminate\Http\Response')->status());
     }
 
     /**

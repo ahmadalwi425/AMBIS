@@ -12,3 +12,11 @@
     border: 1px solid #2D1B6B;
     border-radius: 20px;    
 }
+
+.ambis-edges{
+    border-radius: 5px;
+}
+
+.ambis-font{
+    color: #2D1B6B;
+}
