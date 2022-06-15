@@ -13,6 +13,13 @@
     border-radius: 20px;    
 }
 
+.ambis-edges{
+    border-radius: 5px;
+}
+
+.ambis-font{
+    color: #2D1B6B;
+}
 .ambis-secondary {
     background-color: #584398;
 }

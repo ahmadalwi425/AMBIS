@@ -22,3 +22,4 @@ Route::post('/signin', [App\Http\Controllers\AuthController::class, 'signin']);
 Route::post('/register', [App\Http\Controllers\AuthController::class, 'register']);
 Route::get('/unauth/event', [App\Http\Controllers\eventController::class, 'index']);
 Route::get('/unauth/event/{id}', [App\Http\Controllers\eventController::class, 'show']);
+Route::get('/unauth/event/create', [App\Http\Controllers\eventController::class, 'create']);
