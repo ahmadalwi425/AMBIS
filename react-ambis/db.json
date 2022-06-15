@@ -1,0 +1,38 @@
+{
+    "events": [
+        {
+            "id": "1",
+            "event_title": "KMIPN IV",
+            "event_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "event_link": "https:\/\/www.lipsum.com\/",
+            "due_date": "2022-06-23",
+            "id_category": "1",
+            "id_creator": "1",
+            "created_at": null,
+            "updated_at": null
+        },
+        {
+            "id": "2",
+            "event_title": "KMIPN V",
+            "event_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "event_link": "https:\/\/www.lipsum.com\/",
+            "due_date": "2022-06-23",
+            "id_category": "1",
+            "id_creator": "1",
+            "created_at": null,
+            "updated_at": null
+        }
+    ],
+    "users": [
+        {
+            "id": "1",
+            "name": "admin",
+            "email": "admin@admin.com",
+            "email_verified_at": null,
+            "password": "$2y$10$ttPorFuKpH3DnnQBtevSJuRSHgygCchC04BcP0vIr27oJcDA.Awh.",
+            "id_level": "1",
+            "created_at": "2022-05-27 05:52:42",
+            "updated_at": "2022-05-27 05:52:42"
+        }
+    ]    
+}
