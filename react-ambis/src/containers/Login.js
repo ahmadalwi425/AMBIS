@@ -22,6 +22,13 @@ function Login() {
                         <div className="text-center">
                             <button type="submit" className="btn ambis-btn-primary" style={{width:"350px"}}>Submit</button>
                         </div>
+                        <hr />
+                        <div className="text-center">
+                            <button type="submit" className="btn ambis-btn-primary" style={{width:"350px"}}>Submit</button>
+                        </div>
+                        <div className="text-center">
+                            <Link className="nav-link ambis-link-primary" to="/recruitment">Forget Password</Link>
+                        </div>
                     </form>
                 </div>
             </div>

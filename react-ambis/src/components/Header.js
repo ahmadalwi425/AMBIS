@@ -12,7 +12,7 @@ class Header extends Component {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
-                        <a className="navbar-brand" href="#">
+                        <a className="navbar-brand" href="/">
                             <img src={logo} alt="Logo" style={{ width: "100px" }} />
                         </a>
                         <form className="d-flex" role="search">

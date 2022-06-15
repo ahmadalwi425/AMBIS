@@ -18,7 +18,7 @@ class eventController extends Controller
         $event = Event::with('category_event')->get();
         $data = ['event'=>$event];
         return response()->json([
-            'data' => $data,
+            'events'=>$event,
             'code' => app('Illuminate\Http\Response')->status()
         ], app('Illuminate\Http\Response')->status());
     }
@@ -63,7 +63,11 @@ class eventController extends Controller
      */
     public function show($id)
     {
-        //
+        $event = Event::with('category_event')->find($id);        
+        return response()->json([
+            'events'=>$event,
+            'code' => app('Illuminate\Http\Response')->status()
+        ], app('Illuminate\Http\Response')->status());
     }
 
     /**
