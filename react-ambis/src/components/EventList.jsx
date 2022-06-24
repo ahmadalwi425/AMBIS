@@ -12,7 +12,7 @@ const List = (props) => {
                     <span className="badge border border-dark rounded-pill fs-6 fw-normal text-dark" >{props.due_date}</span>
                     <span className="badge border border-dark rounded-pill fs-6 mx-3 fw-normal  text-dark"></span>
                 </div>
-                <Link {{ pathname: props.id, state: props}} className="nav-link active" aria-current="page">Detail</Link>
+                <Link to={{ pathname: props.id, state: props }} className="nav-link active" aria-current="page">Detail</Link>
             </div>
         </div>
     );

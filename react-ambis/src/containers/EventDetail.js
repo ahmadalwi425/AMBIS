@@ -3,8 +3,8 @@ import '../style.css';
 import { BrowserRouter as Router, Link, Route, Routes, useParams } from "react-router-dom";
 
 // Class Component Header 
-function EventDetail() {
-    let id = useParams()
+class EventDetail extends Component () {
+    id = useParams()
     state = {        
         events: [],        
         insertEvent: {
@@ -18,8 +18,7 @@ function EventDetail() {
     fetchDataFromAPIServer = () => {
         fetch('http://127.0.0.1:8000/api/unauth/event/')
             .then(response => response.json())
-            .then(result => {
-                console.log({id})
+            .then(result => {                
                 this.setState({
                     events: result.events
                 })
@@ -30,8 +29,7 @@ function EventDetail() {
         this.fetchDataFromAPIServer();
     }
 
-    render() {
-        
+    render() {        
         return (
             <div>
                 <img src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a" className="img-fluid" alt="Image Cover" style={{ maxHeight: "300px", objectFit: "cover", width: "100%" }} />

@@ -11,8 +11,8 @@ import Event from './containers/Event'
 import Recruitment from './containers/Recruitment'
 import Profile from './containers/Profile'
 import Login from './containers/Login'
-import EventDetail from './containers/EventDetail';
-import CreateEvent from './containers/CreateEvent'
+// import EventDetail from './containers/EventDetail';
+// import CreateEvent from './containers/CreateEvent'
 
 class App extends Component {
   render() {
@@ -22,11 +22,11 @@ class App extends Component {
         <Routes>
           <Route exact path="/" element={< Home />} />
           <Route path="/event" element={< Event />} />        
-          <Route path="/event/:id" element={< EventDetail />} />
+          {/* <Route path="/event/:id" element={< EventDetail />} /> */}
           <Route path="/recruitment" element={< Recruitment />} />
           <Route path="/profile" element={< Profile />} />
           <Route path="/login" element={< Login />} />
-          <Route path="/createevent" element={< CreateEvent />}></Route>
+          {/* <Route path="/createevent" element={< CreateEvent />}></Route> */}
         </Routes>
         <Footer/>
       </Router>
