@@ -6,6 +6,7 @@ import Event from "./Event";
 import EventDetail from "./EventDetail";
 import Recruitment from "./Recruitment";
 import Profile from "./Profile";
+import CreateEvent from "./CreateEvent";
 
 const routes = [
     { name: "Register", path: "/register", exact: true, main: <Register /> },
@@ -15,6 +16,7 @@ const routes = [
     { name: "Event Detail", path: "/event/:id", exact: false, main:  <EventDetail /> },
     { name: "Recruitment", path: "/recruitment", exact: false, main:  <Recruitment /> },
     { name: "Profile", path: "/profile", exact: false, main: <Profile /> },    
+    { name: "Create Event", path: "/event/create", exact: false, main: <CreateEvent /> },    
 ];
 export default routes;
 

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from '../logo.png';
+import logo from '../assets/img/logo.png'
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import { Row, Col } from 'react-bootstrap';
 import './../style.css';
@@ -44,7 +44,7 @@ class CreateEvent  extends Component{
     handleChange(event) {    this.setState({value: event.target.value});  }
     render(){
         return (
-            <div className="ambis-edges ambis-outline-primary" style={{ padding: "50px",marginTop:"50px",marginBottom:"50px"}}>
+            <div className="ambis-edges ambis-outline-primary m-5" style={{ padding: "50px",marginTop:"50px",marginBottom:"50px"}}>
                 <form>
                     <Col className="mx-0">
                         <LabelInput as={Row} type="text" important="*" placeholder="Title of your event" name="event_title" text="Title" onChange={(item)=>this.setState({event_title:item.target.value})}></LabelInput>
@@ -52,8 +52,8 @@ class CreateEvent  extends Component{
                         <div as={Row} style={{marginBottom:"15px"}}>
                             <Label name="description" text="Description"></Label>
                             <Textarea name="event_description" onChange={(item)=>this.setState({event_description:item.target.value})} placeholder="Description of your event"></Textarea>
-                        </div>
-                        <div as={Row} style={{marginBottom:"15px"}}>
+                        </div>                        
+                        <div as={Row} style={{marginBottom:"15px"}}>                            
                             <Label name="category" text="Category Event"></Label>
                                 <select name="id_category" className="ambis-edges ambis-outline-primary" style={{ padding: "10px",width:"100%"}}  onChange={(item)=>this.setState({id_category:item.target.value})}>
                                 {

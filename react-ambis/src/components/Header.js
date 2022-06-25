@@ -30,9 +30,6 @@ class Header extends Component {
                                 <Link className="nav-link ambis-link-primary" to="/recruitment">Recruitment</Link>
                             </li>
                             <li className="nav-item mx-2">
-                                <Link className="nav-link ambis-link-primary" to="/profile">Profile</Link>
-                            </li>
-                            <li className="nav-item mx-2">
                                 <button className="btn btn-sm ambis-btn-primary" style={{ width: "110px" }}>
                                     <Link className="nav-link text-light" to="/login">Log Out</Link>
                                 </button>
