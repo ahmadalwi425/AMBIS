@@ -1,4 +1,3 @@
-import './App.css';
 import React, { useState, Component } from 'react';
 import { Button, Row, Col } from 'react-bootstrap';
 import { BrowserRouter as Router, Link, Route, Routes, useParams } from "react-router-dom";

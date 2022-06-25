@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Link, Route, Routes, useParams } from "react-router-dom";
 import List from "../containers/EventList";
 import firebase from '../Firebase';
 
@@ -37,7 +36,7 @@ class Event extends Component {
 
     render() {
         return (
-            <div className="p-5">
+            <div className="p-5 row justify-content-center">
                 {
                     this.state.events.map(event => {
                         return <List key={event.key} id={event.key} title={event.title} desc={event.desc} location={event.location} due_date={event.due_date} link={event.link} />

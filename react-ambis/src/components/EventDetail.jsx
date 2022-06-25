@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import '../style.css';
-import { BrowserRouter as Router, Link, Route, Routes, useParams } from "react-router-dom";
 import firebase from '../Firebase';
-// Class Component Header 
 
 class EventDetail extends Component {
     constructor(props) {

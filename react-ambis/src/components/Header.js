@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from '../logo.png';
+import logo from '../assets/img/logo.png'
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import '../style.css'
 
@@ -21,7 +21,7 @@ class Header extends Component {
                         </form>
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
                             <li className="nav-item mx-2">
-                                <Link to="/" className="nav-link active ambis-link-active" aria-current="page">Home</Link>
+                                <Link to="/" className="nav-link ambis-link-primary" aria-current="page">Home</Link>
                             </li>
                             <li className="nav-item mx-2">
                                 <Link className="nav-link ambis-link-primary" to="/event">Event</Link>

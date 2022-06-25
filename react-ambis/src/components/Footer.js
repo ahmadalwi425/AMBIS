@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import logo from '../logo-white.png'
-// Class Component Footer 
+import logoWhite from '../assets/img/logo-white.png'
+
 class Footer extends Component {
     render() {
         return (
@@ -8,7 +8,7 @@ class Footer extends Component {
                 <span className="mb-3 mb-md-0 text-light ">2022 © AMBIS Polinema</span>                    
                 <div className="justify-content-end">
                         <a href="/" className="mb-3 me-2 mb-md-0 text-decoration-none lh-1">
-                            <img src={logo} alt="Logo" style={{ width: "100px" }} />
+                            <img src={logoWhite} alt="Logo" style={{ width: "100px" }} />
                         </a>
                     </div>
             </footer>

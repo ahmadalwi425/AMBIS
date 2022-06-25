@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../App";
 import firebase from "firebase/compat/app"
-import logo from '../logo.png';
+import logo from '../assets/img/logo.png'
 import { Link, Route, Routes } from "react-router-dom";
 
 const Register = () => {
