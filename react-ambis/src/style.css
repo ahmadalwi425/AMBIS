@@ -8,6 +8,14 @@
     color: white;
 }
 
+.ambis-btn-primary:hover {
+    background-color: #2D1B6B;
+    border-radius: 30px;    
+    color: white;
+    text-decoration: underline;
+}
+
+
 .ambis-outline-primary {
     border: 1px solid #2D1B6B;
     border-radius: 20px;    
@@ -25,7 +33,7 @@
 }
 
 .ambis-link-primary {
-    color: #2E286B;
+    color: #2E286B;    
 }
 
 .ambis-link-active {
