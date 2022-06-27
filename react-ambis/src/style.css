@@ -105,6 +105,52 @@ hr{
     margin-top: 50px;
 }
 
+/* event-card */
+.desc-box-secondary{
+    align-items: flex-start;
+    display: flex;
+    height: 396px;
+    margin-left: 30px;
+    margin-top: 85px;
+    min-width: 1350px;
+}
+.overlap-2{
+    align-items: flex-start;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    padding: 57px 90px;
+    width: 1340px;
+    border-style:solid;
+    border-color: #2E286B;
+    border-radius: 15px;
+}
+.overlap-2 h1{
+    color: #2D1B6B;
+    font-weight: 500;
+    min-height: 65px;
+    font-size: 35px;
+    letter-spacing: 0;
+}
+.overlap-2 p{
+    color: #667085;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.08px;
+    line-height: 25px;
+    margin-top: 35px;
+    min-height: 75px;
+}
+.desc-box-secondary button{
+    background-color: #2D1B6B;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 360px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+}
 
 /* accordion */
 .accordion {
