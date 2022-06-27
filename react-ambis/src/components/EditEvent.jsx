@@ -15,28 +15,28 @@ const EditEvent = () => {
     const [title, setTitle] = useState("");
 
     useEffect(() => {
-        const ref = firebase.firestore().collection('events').doc(params.id);     
-        ref.get().then((doc) => {
-            if (doc.exists) {
-                setEvent(
-                    doc.data(),                    
-                );
-                setDesc(event.desc);
-                setDue_date(event.due_date);
-                setLink(event.link);
-                setLocation(event.location);
-                setThumbnail(event.thumbnail);
-                setTitle(event.title);
-            } else {
-                console.log("No such document!");
-            }
-        });
-    }, []);   
+            const ref = firebase.firestore().collection('events').doc(params.id);     
+            ref.get().then((doc) => {
+                if (doc.exists) {
+                    setEvent(
+                        doc.data(),                    
+                    );
+                    setDesc(event.desc);
+                    setDue_date(event.due_date);
+                    setLink(event.link);
+                    setLocation(event.location);
+                    setThumbnail(event.thumbnail);
+                    setTitle(event.title); 
+                } else {
+                    console.log("No such document!");
+                }
+            });
+    }, []);    
 
     const onSubmit = (e) => {
         e.preventDefault();
-        ref.set({
-            category,
+        const ref2 = firebase.firestore().collection('events').doc(params.id); 
+        ref2.set({
             desc,
             due_date,
             link,
@@ -44,19 +44,12 @@ const EditEvent = () => {
             thumbnail,
             title,
         }).then((docRef) => {
-            this.setState({
-                category:'',
-                desc:'',
-                due_date:'',
-                link:'',
-                location:'',
-                thumbnail:'',
-                title:'',
-            });
+            window.location.href = '/event'
         }).catch((error) => {
             console.error("Error adding document: ", error);
         });
     }
+    console.log("isi event");
     console.log(title);
     return (
         <div className="ambis-edges ambis-outline-primary m-5" style={{ padding: "50px",marginTop:"50px",marginBottom:"50px"}}>
