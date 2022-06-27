@@ -12,7 +12,8 @@ const List = (props) => {
                     {/* <span className="badge border border-dark rounded-pill fs-6 fw-normal text-dark" >{props.due_date}</span>
                     <span className="badge border border-dark rounded-pill fs-6 mx-3 fw-normal text-dark">{props.location}</span> */}
                 </div>
-                <Link to={`/event/${props.id}`} className="ambis-link-primary" aria-current="page">Detail</Link>
+                <Link to={`/event/${props.id}`} className="ambis-link-primary" aria-current="page">Detail</Link>&nbsp;&nbsp;&nbsp;&nbsp;
+                <Link to={`/event/edit/${props.id}`} className="ambis-link-primary" aria-current="page">Edit</Link>
             </div>
         </div>
     );
