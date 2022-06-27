@@ -24,7 +24,7 @@ const Login = () => {
     
     let alert;
     if (error) {
-      alert = <div className="alert alert-danger alert-dismissible fade show" role="alert">
+        alert = <div className="alert alert-danger alert-dismissible fade show" role="alert">
                 <span>{error}</span>
                 <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>;
