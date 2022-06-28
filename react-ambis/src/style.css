@@ -49,7 +49,7 @@ section .hero-image img{
 }
 section img{
     display: flex;
-    width: 1519px;
+    width: 100%;
     filter: blur(0.5px);
     align-items: center;
     padding-bottom: 150px;
@@ -64,10 +64,9 @@ hr{
 .desc-box{
     align-items: flex-start;
     display: flex;
-    height: 396px;
-    margin-left: 30px;
-    margin-top: 85px;
-    min-width: 1350px;
+    height: 396px;    
+    margin-top: 85px;    
+    width: 100%;
 }
 .overlap-1{
     align-items: flex-start;
@@ -94,7 +93,7 @@ hr{
     font-size: 15px;
     letter-spacing: 0.08px;
     line-height: 25px;
-    margin-top: 35px;
+    margin-top: 10px;
     min-height: 75px;
 }
 
@@ -109,10 +108,9 @@ hr{
 .desc-box-secondary{
     align-items: flex-start;
     display: flex;
-    height: 396px;
-    margin-left: 30px;
-    margin-top: 85px;
-    min-width: 1350px;
+    height: 396px;    
+    margin-top: 20px;
+    width: 100%;
 }
 .overlap-2{
     align-items: flex-start;
@@ -138,8 +136,7 @@ hr{
     font-weight: 400;
     font-size: 15px;
     letter-spacing: 0.08px;
-    line-height: 25px;
-    margin-top: 35px;
+    line-height: 25px;    
     min-height: 75px;
 }
 .desc-box-secondary button{

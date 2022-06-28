@@ -37,7 +37,7 @@ class Event extends Component {
 
     render() {
         return (
-            <div className="container py-3">
+            <div className="container py-3">                
                 <div>
                     <Link to="/event/create">
                             <button className="btn btn-primary my-3" style={{ background: "#2D1B6B", borderRadius: "30px",  width: "200px"}}>

@@ -30,7 +30,7 @@ const EventDetail = () => {
                     <span className="badge border border-dark rounded-pill fs-6 mx-3 fw-normal  text-dark">{this.state.event.location}</span> */}
                 </div>
                 <div className="text-center">
-                    <a href={event.link} target="_blank"><button type="button" className="btn ambis-btn-primary w-25" style={{ height: "50px" }}>Apply Now!</button></a>                                         
+                    <a href={event.link} target="_blank"><button type="button" className="btn ambis-btn-primary w-25" style={{ height: "50px" }}>Apply Now!</button></a>
                 </div>
             </div>
         </div>

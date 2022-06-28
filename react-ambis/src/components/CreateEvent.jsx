@@ -9,7 +9,7 @@ class CreateEvent extends Component {
         super();
         this.ref = firebase.firestore().collection('category');
         this.refEvent = firebase.firestore().collection('events');
-        this.unsubscribe = null;
+        this.unsubscribe = null;         
         this.state = {
             listcategory: [],
             category: "seminar",
@@ -19,7 +19,7 @@ class CreateEvent extends Component {
             location: "",
             thumbnail: "",
             title: "",
-            loop: 0
+            loop: 0            
         };
     }
 
@@ -31,7 +31,7 @@ class CreateEvent extends Component {
 
     onSubmit = (e) => {
         e.preventDefault();
-        const { category, desc, due_date, link, location, thumbnail, title, } = this.state;
+        const { category, desc, due_date, link, location, thumbnail, title, created_by} = this.state;
         console.log(this.state);
         this.refEvent.add({
             category,
@@ -41,6 +41,7 @@ class CreateEvent extends Component {
             location,
             thumbnail,
             title,
+            created_by
         }).then((docRef) => {
             this.setState({
                 category: '',
@@ -50,6 +51,7 @@ class CreateEvent extends Component {
                 location: '',
                 thumbnail: '',
                 title: '',
+                created_by: ''
             });
             window.location.href = '/event'
         }).catch((error) => {
@@ -78,7 +80,7 @@ class CreateEvent extends Component {
 
     handleChange(event) { this.setState({ value: event.target.value }); }
     render() {
-        const { category, desc, due_date, link, location, thumbnail, title, } = this.state;              
+        const { category, desc, due_date, link, location, thumbnail, title, } = this.state;                      
         return (
             <div className="ambis-edges ambis-outline-primary m-5" style={{ padding: "50px", marginTop: "50px", marginBottom: "50px" }}>
                 <form onSubmit={this.onSubmit}>
