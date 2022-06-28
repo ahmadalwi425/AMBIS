@@ -1,25 +1,28 @@
 import React, { useContext, useState } from "react";
-import { AuthContext } from "../App";
+// import { AuthContext } from "../App";
 import firebase from "firebase/compat/app"
 import logo from '../assets/img/logo.png'
 import { Link, Route, Routes } from "react-router-dom";
+import { useAuth, AuthContext } from "../contexts/AuthContext";
 
 const Register = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [error, setError] = useState("");
-    const Auth = useContext(AuthContext);
+    const [error, setError] = useState("");    
+    const [loading, setLoading] = useState(false)
     const handleForm = (e) => {
         e.preventDefault();
         firebase
             .auth()
             .createUserWithEmailAndPassword(email, password)
             .then((res) => {
-                if (res.user) Auth.setLoggedIn(true);
+                if (res.user) {
+                    setLoading(true);                    
+                }
             })
             .catch((e) => {
                 setError(e.message);
-            })
+            })            
     };
     const googleJoin = () => {
         const provider = new firebase.auth.GoogleAuthProvider();
@@ -28,8 +31,12 @@ const Register = () => {
             .signInWithPopup(provider)
             .then((res) => {
                 console.log(res)
-                Auth.setLoggedIn(true);
+                setLoading(true);
             })
+    }
+
+    if(loading) {
+        window.location.href = '/'
     }
 
     let alert;
